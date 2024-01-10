@@ -1,0 +1,221 @@
+1:
+
+======================
+   General JIT info
+======================
+
+            JIT is :      on
+  Compiler threads :      12
+
+CodeCache overview
+--------------------------------------------------------
+
+         Reserved size :  245760 KB
+        Committed size :  235584 KB
+  Unallocated capacity :   15305 KB
+
+
+__ CodeHeapStateAnalytics lock wait took      0.000 seconds _________
+
+
+__ Compile & CodeCache (global) lock wait took      0.000 seconds _________
+
+=============================================================
+=  C O D E   H E A P   A N A L Y S I S   (general remarks)  =
+=============================================================
+   The code heap analysis function provides deep insights into
+   the inner workings and the internal state of the Java VM's
+   code cache - the place where all the JVM generated machine
+   code is stored.
+
+   This function is designed and provided for support engineers
+   to help them understand and solve issues in customer systems.
+   It is not intended for use and interpretation by other persons.
+
+
+======================================================================================================
+=  C O D E   H E A P   A N A L Y S I S   (used blocks) for segment CodeHeap 'non-profiled nmethods'  =
+======================================================================================================
+   The aggregate step takes an aggregated snapshot of the CodeHeap.
+   Subsequent print functions create their output based on this snapshot.
+   The CodeHeap is a living thing, and every effort has been made for the
+   collected data to be consistent. Only the method names and signatures
+   are retrieved at print time. That may lead to rare cases where the
+   name of a method is no longer available, e.g. because it was unloaded.
+
+   CodeHeap committed size 119168K (116M), reserved size 119168K (116M), 100% occupied.
+   CodeHeap allocation segment size is 128 bytes. This is the smallest possible granularity.
+   CodeHeap (committed part) is mapped to 29792 granules of size 4096 bytes.
+   Each granule takes 40 bytes of C heap, that is 1163K in total for statistics data.
+   The number of granules is limited to 512k, requiring a granules size of at least 2048 bytes for a 1GB heap.
+
++---------------------------------------------------------------------------+
+|  Global CodeHeap statistics for segment CodeHeap 'non-profiled nmethods'  |
++---------------------------------------------------------------------------+
+freeSpace        =        0k, nBlocks_free     =      0,      0.000% of capacity,      0.000% of max_capacity
+usedSpace        =   119167k, nBlocks_used     = 126231,     99.999% of capacity,     99.999% of max_capacity
+  Tier1 Space    =      700k, nBlocks_t1       =    843,      0.588% of capacity,      0.588% of max_capacity
+  Tier2 Space    =     9002k, nBlocks_t2       =   1827,      7.554% of capacity,      7.554% of max_capacity
+  Alive Space    =   109464k, nBlocks_alive    = 123561,     91.857% of capacity,     91.857% of max_capacity
+    disconnected =        0k, nBlocks_disconn  =      0,      0.000% of capacity,      0.000% of max_capacity
+    not entrant  =   109464k, nBlocks_notentr  = 123561,     91.857% of capacity,     91.857% of max_capacity
+  stubSpace      =   109464k, nBlocks_stub     = 123561,     91.857% of capacity,     91.857% of max_capacity
+ZombieBlocks     =        0. These are HeapBlocks which could not be identified as CodeBlobs.
+
+Segment start          = 0x00007f2a18466000, used space      =   119168k
+Segment end (used)     = 0x00007f2a1f8c6000, remaining space =        0k
+Segment end (reserved) = 0x00007f2a1f8c6000, reserved space  =   119168k
+
+latest allocated compilation id = 307185
+highest observed compilation id = 305730
+Building TopSizeList iterations = 51163
+
+Verifying collected data......done
+
+
++------------------------------------------------------------+
+|  no free blocks found in CodeHeap 'non-profiled nmethods'  |
++------------------------------------------------------------+
+==================================================================================================
+=  C O D E   H E A P   A N A L Y S I S   (used blocks) for segment CodeHeap 'profiled nmethods'  =
+==================================================================================================
+   The aggregate step takes an aggregated snapshot of the CodeHeap.
+   Subsequent print functions create their output based on this snapshot.
+   The CodeHeap is a living thing, and every effort has been made for the
+   collected data to be consistent. Only the method names and signatures
+   are retrieved at print time. That may lead to rare cases where the
+   name of a method is no longer available, e.g. because it was unloaded.
+
+   CodeHeap committed size 111808K (109M), reserved size 119164K (116M), 93% occupied.
+   CodeHeap allocation segment size is 128 bytes. This is the smallest possible granularity.
+   CodeHeap (committed part) is mapped to 27952 granules of size 4096 bytes.
+   Each granule takes 40 bytes of C heap, that is 1091K in total for statistics data.
+   The number of granules is limited to 512k, requiring a granules size of at least 2048 bytes for a 1GB heap.
+
++-----------------------------------------------------------------------+
+|  Global CodeHeap statistics for segment CodeHeap 'profiled nmethods'  |
++-----------------------------------------------------------------------+
+freeSpace        =     2863k, nBlocks_free     =     64,      2.561% of capacity,      2.403% of max_capacity
+usedSpace        =   108926k, nBlocks_used     = 115232,     97.423% of capacity,     91.409% of max_capacity
+  Tier1 Space    =       92k, nBlocks_t1       =    119,      0.083% of capacity,      0.077% of max_capacity
+  Tier2 Space    =     8270k, nBlocks_t2       =   1448,      7.397% of capacity,      6.940% of max_capacity
+  Alive Space    =   100563k, nBlocks_alive    = 113665,     89.943% of capacity,     84.391% of max_capacity
+    disconnected =        0k, nBlocks_disconn  =      0,      0.000% of capacity,      0.000% of max_capacity
+    not entrant  =   100563k, nBlocks_notentr  = 113665,     89.943% of capacity,     84.391% of max_capacity
+  stubSpace      =   100563k, nBlocks_stub     = 113665,     89.943% of capacity,     84.391% of max_capacity
+ZombieBlocks     =        0. These are HeapBlocks which could not be identified as CodeBlobs.
+
+Segment start          = 0x00007f2a108c6000, used space      =   111808k
+Segment end (used)     = 0x00007f2a175f6000, remaining space =     7356k
+Segment end (reserved) = 0x00007f2a17d25000, reserved space  =   119164k
+
+latest allocated compilation id = 307185
+highest observed compilation id = 307185
+Building TopSizeList iterations = 52408
+
+Verifying collected data......done
+
+
+==================================================================================================
+=  C O D E   H E A P   A N A L Y S I S   (free blocks) for segment CodeHeap 'profiled nmethods'  =
+==================================================================================================
+   The aggregate step collects information about all free blocks in CodeHeap.
+   Subsequent print functions create their output based on this snapshot.
+
+   Free space in CodeHeap 'profiled nmethods' is distributed over 64 free blocks.
+   Each free block takes 24 bytes of C heap for statistics data, that is 1K in total.
+
+======================================================================================================
+=  C O D E   H E A P   A N A L Y S I S   C O M P L E T E   for segment CodeHeap 'profiled nmethods'  =
+======================================================================================================
+
+=============================================================================================
+=  C O D E   H E A P   A N A L Y S I S   (used blocks) for segment CodeHeap 'non-nmethods'  =
+=============================================================================================
+   The aggregate step takes an aggregated snapshot of the CodeHeap.
+   Subsequent print functions create their output based on this snapshot.
+   The CodeHeap is a living thing, and every effort has been made for the
+   collected data to be consistent. Only the method names and signatures
+   are retrieved at print time. That may lead to rare cases where the
+   name of a method is no longer available, e.g. because it was unloaded.
+
+   CodeHeap committed size 4608K (4M), reserved size 7428K (7M), 62% occupied.
+   CodeHeap allocation segment size is 128 bytes. This is the smallest possible granularity.
+   CodeHeap (committed part) is mapped to 1152 granules of size 4096 bytes.
+   Each granule takes 40 bytes of C heap, that is 45K in total for statistics data.
+   The number of granules is limited to 512k, requiring a granules size of at least 2048 bytes for a 1GB heap.
+
++------------------------------------------------------------------+
+|  Global CodeHeap statistics for segment CodeHeap 'non-nmethods'  |
++------------------------------------------------------------------+
+freeSpace        =     2223k, nBlocks_free     =     23,     48.248% of capacity,     29.931% of max_capacity
+usedSpace        =     2360k, nBlocks_used     =   1045,     51.229% of capacity,     31.780% of max_capacity
+  Tier1 Space    =        0k, nBlocks_t1       =      0,      0.000% of capacity,      0.000% of max_capacity
+  Tier2 Space    =        0k, nBlocks_t2       =      0,      0.000% of capacity,      0.000% of max_capacity
+  Alive Space    =        0k, nBlocks_alive    =      0,      0.000% of capacity,      0.000% of max_capacity
+    disconnected =        0k, nBlocks_disconn  =      0,      0.000% of capacity,      0.000% of max_capacity
+    not entrant  =        0k, nBlocks_notentr  =      0,      0.000% of capacity,      0.000% of max_capacity
+  stubSpace      =     2360k, nBlocks_stub     =   1045,     51.229% of capacity,     31.780% of max_capacity
+ZombieBlocks     =        0. These are HeapBlocks which could not be identified as CodeBlobs.
+
+Segment start          = 0x00007f2a17d25000, used space      =     4608k
+Segment end (used)     = 0x00007f2a181a5000, remaining space =     2820k
+Segment end (reserved) = 0x00007f2a18466000, reserved space  =     7428k
+
+latest allocated compilation id = 307185
+highest observed compilation id = 0
+Building TopSizeList iterations = 23839
+
+Verifying collected data......done
+
+
+=============================================================================================
+=  C O D E   H E A P   A N A L Y S I S   (free blocks) for segment CodeHeap 'non-nmethods'  =
+=============================================================================================
+   The aggregate step collects information about all free blocks in CodeHeap.
+   Subsequent print functions create their output based on this snapshot.
+
+   Free space in CodeHeap 'non-nmethods' is distributed over 23 free blocks.
+   Each free block takes 24 bytes of C heap for statistics data, that is 0K in total.
+
+=================================================================================================
+=  C O D E   H E A P   A N A L Y S I S   C O M P L E T E   for segment CodeHeap 'non-nmethods'  =
+=================================================================================================
+
+======================================================================================
+=  U S E D   S P A C E   S T A T I S T I C S   for CodeHeap 'non-profiled nmethods'  =
+======================================================================================
+Note: The Top100 list of the largest used blocks associates method names
+      and other identifying information with the block size data.
+
+      Method names are dynamically retrieved from the code cache at print time.
+      Due to the living nature of the code cache and because the CodeCache_lock
+      is not continuously held, the displayed name might be wrong or no name
+      might be found at all. The likelihood for that to happen increases
+      over time passed between analysis and print step.
+
+
++-----------------------------------------------------------+
+|  Largest Used Blocks in CodeHeap 'non-profiled nmethods'  |
++-----------------------------------------------------------+
+
++---------------------------------------------------+
+|  Block types used in the following CodeHeap dump  |
++---------------------------------------------------+
+    - noType
+  C - nMethod (under construction), cannot be observed
+  N - nMethod (active)
+  I - nMethod (inactive)
+  X - nMethod (deopt)
+  Z - runtime stub
+  U - ricochet stub
+  R - deopt stub
+  ? - uncommon trap stub
+  D - exception stub
+  T - safepoint stub
+  E - adapter blob
+  S - MH adapter blob
+  A - buffer blob
+  -----------------------------------------------------
+
+ <set of compiled methods stripped>
